@@ -18,9 +18,9 @@ export class Weather {
   }
 
   async coordinatesFunc(city: string | null) {
-    const coordinatesApi = "http://api.openweathermap.org/geo/1.0/direct";
-    const forecastApi = "http://api.openweathermap.org/data/2.5/forecast";
-    const currentWeatherApi = "http://api.openweathermap.org/data/2.5/weather";
+    const coordinatesApi = "https://api.openweathermap.org/geo/1.0/direct";
+    const forecastApi = "https://api.openweathermap.org/data/2.5/forecast";
+    const currentWeatherApi = "https://api.openweathermap.org/data/2.5/weather";
     try {
       const coordinates = await axios.get(coordinatesApi, {
         params: {
